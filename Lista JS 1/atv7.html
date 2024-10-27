@@ -1,0 +1,20 @@
+<script>
+    const data = prompt("Informe uma data seguindo o modelo - Mes/Dia : ");
+    const dataSep = data.split("/");
+
+    let mesString = dataSep[0]
+    let diaString = dataSep[1]
+
+    let mes = Number(mesString)
+    let dia = Number(diaString)
+
+    if(mes == 1){
+        calc = dia
+    }
+    else{
+        calc = dia + (mes * 30)
+    }
+
+    alert("Se passaram " + calc + " dias desde o inicio do ano");
+
+</script>

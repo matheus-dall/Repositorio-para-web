@@ -1,0 +1,13 @@
+<script>
+    const qtds = prompt("Informe a quantidade de camisas P,M e G vendidas conforme o modelo - P/M/G : ");
+    const qtdsSeparadas = qtds.split("/");
+
+    let P = Number(qtdsSeparadas[0])
+    let M = Number(qtdsSeparadas[1])
+    let G = Number(qtdsSeparadas[2])
+
+    let pesosTotal = (P * 10) + (M * 12) + (G * 15);
+    let resposta = pesosTotal.toFixed(2);
+
+    alert("O lucro estimado é de: R$" + resposta);
+</script>

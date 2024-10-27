@@ -1,0 +1,19 @@
+<script>
+    const pontoA = prompt("Informe as coordenadas do ponto A seguindo o modelo - X,Y : ");
+    const pontoB = prompt("Informe as coordenadas do ponto B seguindo o modelo - X,Y : ");
+    const coordA = pontoA.split(",");
+    const coordB = pontoB.split(",");
+
+    let XdeA = Number(coordA[0]);
+    let YdeA = Number(coordA[1]);
+
+    let XdeB = Number(coordB[0]);
+    let YdeB = Number(coordB[1]);
+
+    let p1_calculo = ((XdeA - XdeB) ** 2) + ((YdeA - YdeB) ** 2);
+    let p2_calculo = Math.sqrt(p1_calculo);
+
+    let resposta = p2_calculo.toFixed(2);
+
+    alert("A distancia entre os dois pontos é: " + resposta);
+</script>
